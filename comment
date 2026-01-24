@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+<?php
+    echo "comments are something you can not see unless you look at the code.";
+	
+	//single line comment uses 2 forward slash
+	/*
+	multi line comment can go to several lines
+	without needing to put anything infront of the line
+	*/
+?>
+
+</body>
+</html>
