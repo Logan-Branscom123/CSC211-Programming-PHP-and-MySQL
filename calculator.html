@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Purchase Calculator</title>
+</head>
+<body>
+
+<h2>Purchase Calculator</h2>
+
+<form action="handle_calc.php" method="post">
+
+    <p>
+        <label>Price:
+            <input type="text" name="price" value="19.95">
+        </label>
+    </p>
+
+    <p>
+        <label>Quantity:
+            <input type="text" name="quantity" value="6">
+        </label>
+    </p>
+
+    <p>
+        <label>Tax Rate:
+            <input type="text" name="tax" value="0.086">
+        </label>
+    </p>
+
+    <p>
+        <label>Discount:
+            <input type="text" name="discount" value="5.00">
+        </label>
+    </p>
+
+    <p>
+        <input type="submit" value="Calculate Total">
+    </p>
+
+</form>
+
+</body>
+</html>
