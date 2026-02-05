@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handle POST</title>
+</head>
+<body>
+
+    <h1>Form Results</h1>
+
+    <?php
+        $first = htmlspecialchars($_POST['first_name']);
+        $last  = htmlspecialchars($_POST['last_name']);
+
+        $posting = htmlspecialchars($_POST['posting']);
+        $posting = nl2br($posting, false);
+
+        $full_name = $first . ' ' . $last;
+
+        echo "<p>Hello, $full_name!</p>";
+        echo "<p>$posting</p>";
+    ?>
+
+</body>
+</html>
