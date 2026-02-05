@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handle POST</title>
+</head>
+<body>
+
+    <h1>Form Results</h1>
+
+    <?php
+        $first   = $_POST['first_name'];
+        $last    = $_POST['last_name'];
+        $posting = nl2br($_POST['posting'], false);
+
+        $full_name = $first . ' ' . $last;
+
+        echo "<p>Hello, $full_name!</p>";
+        echo "<p>$posting</p>";
+    ?>
+
+</body>
+</html>
