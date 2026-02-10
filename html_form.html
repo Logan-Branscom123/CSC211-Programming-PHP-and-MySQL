@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Information Form</title>
+</head>
+<body>
+
+<h1>User Information</h1>
+
+<form action="handle_form.php" method="post">
+
+    <!-- #1 First Name -->
+    <p>
+        First Name:
+        <input type="text" name="first_name">
+    </p>
+
+    <!-- #2 Last Name -->
+    <p>
+        Last Name:
+        <input type="text" name="last_name">
+    </p>
+
+    <!-- #3 Email -->
+    <p>
+        Email:
+        <input type="text" name="email">
+    </p>
+
+    <!-- #4 Gender -->
+    <p>
+        Gender:
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+    </p>
+
+    <!-- #5 Favorite Color (added two more) -->
+    <p>
+        Favorite Color:
+        <select name="color">
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Purple">Purple</option> <!-- added -->
+            <option value="Orange">Orange</option> <!-- added -->
+        </select>
+    </p>
+
+    <!-- #6 Comments -->
+    <p>
+        Comments:<br>
+        <textarea name="comments" rows="5" cols="40"></textarea>
+    </p>
+
+    <!-- #7 Submit -->
+    <p>
+        <input type="submit" value="Submit">
+    </p>
+
+    <!-- #8 Reset -->
+    <p>
+        <input type="reset" value="Reset">
+    </p>
+
+</form>
+
+</body>
+</html>
